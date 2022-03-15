@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PWIII - Bootstrap</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap/bootstrap.js"></script>
+    <script src="./js/anime.js"></script>
+    <script src="./js/index.js"></script>
+    <link href="./css/bootstrap/bootstrap.css" rel="stylesheet">
+    </link>
+    <link href="./css/index.css" rel="stylesheet">
+    </link>
+</head>
+
+<body style="background-image: url(./img/background.png);">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: orange; color: white;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="https://logos-world.net/wp-content/uploads/2021/02/Crunchyroll-Symbol.png" alt="" width="60"
+                    height="35">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Início</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="container" style="background-color: rgba(255, 255, 255, 15%);">
+            <div style="height: 2vh;"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header" style="background-color: orange; color: white;">
+                                <h5 id="anime_name" class="card-title">anime_name_placeholder</h5>
+                            </div>
+                            <img id="anime_img" src="anime_img_placeholder" class="card-img-top">
+                            <div class="card-footer" style="background-color: orange;"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Informações
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="card text-center">
+                                                    <div class="card-header" style="background-color: orange; color: white;">
+                                                        <h5>Ano</h5>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="card-text">
+                                                            <p id="anime_year">anime_year_placeholder</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="card text-center">
+                                                    <div class="card-header" style="background-color: orange; color: white;">
+                                                        <h5>Autor</h5>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="card-text">
+                                                            <p id="anime_author">anime_author_placeholder</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="card text-center">
+                                                    <div class="card-header" style="background-color: orange; color: white;">
+                                                        <h5>Estúdio</h5>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="card-text">
+                                                            <p id="anime_studio">anime_studio_placeholder</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Descrição
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="card">
+                                            <div class="card-header" style="background-color: orange; color: white;">
+                                                <div class="card-title">
+                                                    <h5>Descrição</h5>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="card-text">
+                                                    <p id="anime_description">anime_description_placehodler</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 2vh;"></div>
+        </div>
+    </div>
+    <script>setFields();</script>
+</body>
+
+</html>

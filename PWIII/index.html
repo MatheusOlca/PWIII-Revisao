@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PWIII - Bootstrap</title>
+    <script src="./js/jquery.js" ></script>
+    <script src="./js/bootstrap/bootstrap.js"></script>
+    <script src="./js/index.js"></script>
+    <link href="./css/bootstrap/bootstrap.css" rel="stylesheet"></link>
+    <link href="./css/index.css" rel="stylesheet"></link>
+</head>
+<body style="background-image: url(./img/background.png);">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: orange; color: white;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/symbol.png" alt="" width="30" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="color: white;">Início</a>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/jujutsu.png" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(25, 25, 25, 0.4);">
+                        <h5>Jujutsu Kaisen</h5>
+                        <p>Shounemzinho pei pei.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/kimetsu.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(25, 25, 25, 0.4);">
+                        <h5>Kimetsu no Yaiba</h5>
+                        <p>Shounemzinho pei pei.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/shingeki.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(25, 25, 25, 0.4);">
+                        <h5>Shingeki no Kyojin</h5>
+                        <p>Shounemzinho pei pei.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container"style="background-color: rgba(255, 255, 255, 15%);;">
+            <div style="height: 2vh;"></div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header" style="background-color: orange; color: white;">
+                            <h5 class="card-title">Jujutsu Kaisen</h5>
+                        </div>
+                        <img src="./img/poster/jujutsu_kaisen.png" class="card-img-top" style="height: 25rem;">
+                        <div class="card-footer" style="color: white; background-color: orange;">
+                            <p>
+                                <div class="d-grid">
+                                    <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardOne" aria-expanded="false" aria-controls="collapseExample">
+                                        Ver Mais
+                                    </button>
+                                </div>
+                            </p>
+                            <div class="collapse" id="collapseCardOne">
+                                <div class="card card-body" style="color: black;">
+                                    Apesar do estudante colegial Yuuji Itadori ter grande força física, ele se inscreve no Clube de Ocultismo. Certo dia, eles encontram um “objeto amaldiçoado” e retiram o selo, atraindo criaturas chamadas de “maldições”.
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-outline-light" type="button" onclick="selectAnime(0);">Assistir Agora</button>
+                                    </div> 
+                                </div>
+                            </div>            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header" style="background-color: orange; color: white;">
+                            <h5 class="card-title">Kimetsu no Yaiba</h5>
+                        </div>
+                        <img src="./img/poster/kimetsu_yaiba.png" class="card-img-top" style="height: 25rem;">
+                        <div class="card-footer" style="color: white; background-color: orange;">
+                            <p>
+                                <div class="d-grid">
+                                    <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardTwo" aria-expanded="false" aria-controls="collapseExample">
+                                        Ver Mais
+                                    </button>
+                                </div>
+                            </p>
+                            <div class="collapse" id="collapseCardTwo">
+                                <div class="card card-body" style="color: black;">
+                                    Em Kimetsu no Yaiba, Tanjiro, um bondoso jovem que ganha a vida vendendo carvão descobre que sua família foi massacrada por um demônio. E, para piorar, Nezuko, sua irmã mais nova e única sobrevivente, também acabou transformada em um demônio.                                
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-outline-light" type="button" onclick="selectAnime(1);">Assistir Agora</button>
+                                    </div> 
+                                </div>
+                            </div>            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header" style="background-color: orange; color: white;">
+                            <h5 class="card-title">Shingeki no Kyojin</h5>
+                        </div>
+                        <img src="./img/poster/shingeki_kyojin.png" class="card-img-top" style="height: 25rem;">
+                        <div class="card-footer" style="color: white; background-color: orange;">
+                            <p>
+                                <div class="d-grid">
+                                    <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardThree" aria-expanded="false" aria-controls="collapseExample">
+                                        Ver Mais
+                                    </button>
+                                </div>
+                            </p>
+                            <div class="collapse" id="collapseCardThree">
+                                <div class="card card-body" style="color: black;">
+                                    Para escapar dos titãs, gigantes devoradores de homens, a humanidade se refugiou em cidades cercadas por enormes muralhas. Quando eles voltam a atacar, Eren Yeager se junta à luta para combater as criaturas.
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-outline-light" type="button" onclick="selectAnime(2);">Assistir Agora</button>
+                                    </div> 
+                                </div>
+                            </div>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
